@@ -1,2 +1,4 @@
 /model/model_trainer/
 .vscode/
+/node_modules/
+package-lock.json
