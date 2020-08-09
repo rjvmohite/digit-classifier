@@ -7,7 +7,7 @@ var model;
 
 function getModel() {
 
-	model = tf.loadLayersModel('http://139.59.91.119:8888/model/model.json');
+	model = tf.loadLayersModel('http://139.59.91.119:5555/model/model.json');
 
 	return model;
 }
@@ -20,7 +20,7 @@ function setPosition(e) {
 function draw(e) {
 	if (e.buttons != 1) return;
 	ctx.beginPath();
-	ctx.lineWidth = 24;
+	ctx.lineWidth = 12;
 	ctx.lineCap = 'round';
 	ctx.strokeStyle = 'white';
 	ctx.moveTo(pos.x, pos.y);
