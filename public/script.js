@@ -5,7 +5,7 @@ var model;
 
 function getModel() {
 
-	model = tf.loadLayersModel('http://localhost:8888/model/model.json');
+	model = tf.loadLayersModel('http://<enter_your_addr>/model/model.json');
 
 	return model;
 }
