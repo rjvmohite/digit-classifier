@@ -2,10 +2,12 @@ var canvas, ctx, saveButton, clearButton;
 var pos = { x: 0, y: 0 };
 var rawImage;
 var model;
+//const pro = require('dotenv').config();
+
 
 function getModel() {
 
-	model = tf.loadLayersModel('http://<enter_your_addr>/model/model.json');
+	model = tf.loadLayersModel('http://139.59.91.119:8888/model/model.json');
 
 	return model;
 }
